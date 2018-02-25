@@ -1,0 +1,11 @@
+C:\Users\Blair\Desktop\WebApi\Loans\bin\Debug\netcoreapp2.0\Loans.deps.json
+C:\Users\Blair\Desktop\WebApi\Loans\bin\Debug\netcoreapp2.0\Loans.runtimeconfig.json
+C:\Users\Blair\Desktop\WebApi\Loans\bin\Debug\netcoreapp2.0\Loans.runtimeconfig.dev.json
+C:\Users\Blair\Desktop\WebApi\Loans\bin\Debug\netcoreapp2.0\Loans.dll
+C:\Users\Blair\Desktop\WebApi\Loans\bin\Debug\netcoreapp2.0\Loans.pdb
+C:\Users\Blair\Desktop\WebApi\Loans\obj\Debug\netcoreapp2.0\Loans.csprojResolveAssemblyReference.cache
+C:\Users\Blair\Desktop\WebApi\Loans\obj\Debug\netcoreapp2.0\Loans.csproj.CoreCompileInputs.cache
+C:\Users\Blair\Desktop\WebApi\Loans\obj\Debug\netcoreapp2.0\Loans.AssemblyInfoInputs.cache
+C:\Users\Blair\Desktop\WebApi\Loans\obj\Debug\netcoreapp2.0\Loans.AssemblyInfo.cs
+C:\Users\Blair\Desktop\WebApi\Loans\obj\Debug\netcoreapp2.0\Loans.dll
+C:\Users\Blair\Desktop\WebApi\Loans\obj\Debug\netcoreapp2.0\Loans.pdb

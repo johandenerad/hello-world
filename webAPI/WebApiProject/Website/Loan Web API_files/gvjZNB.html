@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://s.codepen.io/johandenerad/fullpage/gvjZNB -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+  <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+  <title>CodePen - Loan Web API</title>
+  
+  
+  
+  
+  
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+
+  <h1>LOAN DISPLAY</h1>
+<input id="getAll" type="button" value="Get All Loans">
+<input id="getOne" type="button" value="Find Loan">
+<input id="add" type="button" value="Add Loan">
+<input id="delete" type="button" value="Delete Loan">
+<input id="clear" type="button" value="Clear">
+  <ul id="Loans">Results Here</ul>
+    <script src="./stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js.download"></script>
+
+  <script src="./jquery.min.js.download"></script>
+
+  
+
+    <script>
+      //alert('page started');
+
+$('#getAll').on('click', function() {
+  //alert('button pressed');
+  $('#Loans').empty();
+  $.getJSON(
+  'https://localhost:44394/api/Loans/',
+  function(data) {
+    console.log(data);
+    var derp = JSON.stringify(data);
+    $('#Loans').html('<li>' + derp + '</li>');
+  });
+}) 
+
+$('#getOne').on('click', function() {
+  //alert('button pressed');
+  $('#Loans').empty();
+  var id = prompt('specify id');
+  $.getJSON(
+  'https://localhost:44394/api/Loans/' + id,
+  function(data) {
+    console.log(data);
+    var display = JSON.stringify(data);
+    $('#Loans').html('<li>' + display + '</li>');
+  });
+})
+
+$('#add').on('click', function() {
+  //alert('button pressed');
+  $('#Loans').empty();
+  var cust = prompt('specify name');
+  var repay = prompt('repayment size');
+  var fund = prompt('fund size');
+  var loan = {"id":"0","customer":cust.toString(),"repayAmount":repay.toString(),"fundAmount":fund.toString()};
+  $.ajax({
+    type:'POST',
+    url: 'https://localhost:44394/api/Loans/',
+    contentType: 'application/json',
+    data: JSON.parse(loan) 
+  })
+  $('#Loans').html('Added');
+  });
+
+$('#delete').on('click', function() {
+  //alert('button pressed');
+  $('#Loans').empty();
+  var id = prompt('specify id');
+  $.ajax({
+    url: 'https://localhost:44394/api/Loans/' + id, 
+    type:'DELETE',
+    contentType: 'application/json'
+  })
+  $('#Loans').html('Deleted');
+  });
+
+$('#clear').on('click', function() {
+  //alert('button pressed');
+  $('#Loans').empty();
+  $('#Loans').html('Display Cleared');
+  });
+      //# sourceURL=pen.js
+    </script>
+
+
+
+  
+  
+
+
+
+
+ </body></html>
