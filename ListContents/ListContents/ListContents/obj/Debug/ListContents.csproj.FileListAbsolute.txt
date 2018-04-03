@@ -1,0 +1,6 @@
+C:\Users\Blair\source\repos\ListContents\ListContents\bin\Debug\ListContents.exe
+C:\Users\Blair\source\repos\ListContents\ListContents\bin\Debug\ListContents.pdb
+C:\Users\Blair\source\repos\ListContents\ListContents\obj\Debug\ListContents.csprojResolveAssemblyReference.cache
+C:\Users\Blair\source\repos\ListContents\ListContents\obj\Debug\ListContents.csproj.CoreCompileInputs.cache
+C:\Users\Blair\source\repos\ListContents\ListContents\obj\Debug\ListContents.exe
+C:\Users\Blair\source\repos\ListContents\ListContents\obj\Debug\ListContents.pdb
