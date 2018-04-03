@@ -10,4 +10,4 @@ I'm 33 and live in London, UK.
 
 25/02/2018 - Added WebApi: a slightly borked in-memory Api I built using C#, with a website that accesses it's methods via jQuery.
 
-03/04/2018 - Added ListConntents: a C# console application that lists the files in a folder and orders them by size. 
+03/04/2018 - Added ListContents: a C# console application that lists the files in a folder and orders them by size. 
