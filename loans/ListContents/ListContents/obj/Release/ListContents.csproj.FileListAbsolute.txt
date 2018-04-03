@@ -1,5 +1,0 @@
-C:\Users\Blair\source\repos\ListContents\ListContents\bin\Release\ListContents.exe
-C:\Users\Blair\source\repos\ListContents\ListContents\bin\Release\ListContents.pdb
-C:\Users\Blair\source\repos\ListContents\ListContents\obj\Release\ListContents.csproj.CoreCompileInputs.cache
-C:\Users\Blair\source\repos\ListContents\ListContents\obj\Release\ListContents.exe
-C:\Users\Blair\source\repos\ListContents\ListContents\obj\Release\ListContents.pdb
